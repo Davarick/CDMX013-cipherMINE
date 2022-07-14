@@ -1,3 +1,43 @@
-body h1{
+html, body {
+    height: 100%;
+    width: 100%;
+          background-color: hsla(28, 87%, 91%, 0.94);
+        text-align: center;
+        background-image: url(img/BG.png);
+        background-position: center;
+        background-size: contain;
+  }
+
+  .img-cueva {
+    position: absolute;
+    size: contain;
+    z-index: 2;
+  }
+
+  h1 {
+    color: blue;
+    font-family: 'Roboto', sans-serif
+  }
+
+.textarea {
+
+    background-color: hsla(28, 98%, 77%, 0.83);
+    color:hotpink;
+    padding: 1em;
+    /*border:2px solid transparent;*/
+    outline : none;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 
 }
+
+.img-tortuga {
+position: absolute;
+width: 15%;
+z-index: 1;
+}
+/*#alien, #karate, #homura, #nada{
+display: none;
+}*/
