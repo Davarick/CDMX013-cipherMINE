@@ -1,42 +1,54 @@
 html, body {
     height: 100%;
     width: 100%;
-          background-color: hsla(28, 87%, 91%, 0.94);
-        text-align: center;
-        background-image: url(img/BG.png);
-        background-position: center;
-        background-size: contain;
-  }
-
-  .img-cueva {
-    position: absolute;
-    size: contain;
-    z-index: 2;
-  }
-
-  h1 {
-    color: blue;
-    font-family: 'Roboto', sans-serif
-  }
-
-.textarea {
-
-    background-color: hsla(28, 98%, 77%, 0.83);
-    color:hotpink;
-    padding: 1em;
-    /*border:2px solid transparent;*/
-    outline : none;
+    background-color: hsla(28, 87%, 91%, 0.94);
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(img/BG.png);
+    background-position: center;
+    background-size: 100% 100%;
+    font-family: 'Press Start 2P', cursive;
     font-weight: 500;
     font-size: 16px;
+  }
 
-}
+
 
 .img-tortuga {
 position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 width: 15%;
 z-index: 1;
+}
+
+.img-dialogo{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  }
+
+.img-cueva {
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  z-index: 3;
+}
+
+#dialogtext{
+  position: absolute;
+  color:#996633;
+  padding: 1em;
+  left:50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
 }
 /*#alien, #karate, #homura, #nada{
 display: none;
