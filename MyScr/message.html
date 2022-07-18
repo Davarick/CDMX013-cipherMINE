@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style1.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>MENSAJE</title>
 </head>
 <script type="text/javascript" src="app.js"></script>
 <body>
-    <img src="img/Mensaje.png">
+    <h1 id="title">Puedes usar este pergamino para escribir</h1>
+    <p>(no uses símbolos especiales (Ñ#$.), que aún no sé cómo codificarlos)</p>
+    <img class="img-message"  src="img/Mensaje.png">
+    <textarea name="message" id="themessage" placeholder="Escribe aquí tu mensaje..." autocapitalize="characters"></textarea>
+    <form>
+    <input id="thebuttontobutton"  type="button" value="Continuar" onclick="getthememo()" >
+   </form>
+    
 </body>
 </html>
