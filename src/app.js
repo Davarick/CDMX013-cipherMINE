@@ -12,17 +12,14 @@ var theTextMessage = document.getElementById("themessage").value;
 window.location.href = "offset.html";
 }
 
+const root = document.documentElement;
 function insertoffset () {
-document.getElementById("img-circuloexterno").animate([
-    // fotogramas clave
-    { transform: "rotate(0turn)" },
-    { transform: 'rotate((1turn))' }
-  ], {
-    // opciones de sincronizaciónd
-    duration:   1000,
-    iterations: 1
-  });
+  theOffset = document.getElementById("offset").value
+  root.style.setProperty('--turn', (theOffset * (1/26)) + "turn"); 
+  document.getElementById('img-circuloexterno').style.animation="girarcipher 2s 1 forwards";
 }
+
+
 
 function codethememo () 
 {  

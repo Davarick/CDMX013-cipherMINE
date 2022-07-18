@@ -1,3 +1,7 @@
+:root {
+  --turn: 1turn;
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -9,6 +13,15 @@ html, body {
     font-weight: 500;
     font-size: 16px;
     color:#744e29;
+  }
+
+  div {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 1;
   }
 
   .img-cueva {
@@ -44,12 +57,8 @@ html, body {
 
 
   #img-circuloexterno {
-    position:absolute;
-    left: 29.7%;
-    top: 22.7%;
-    width: 40%;
+    width: 80%;
     margin: auto;
-    z-index: 1;
   }
 
   #instrucciones{
@@ -72,9 +81,9 @@ html, body {
 
   @keyframes girarcipher {
     0% {  
-    transform: rotate(0turn);
+    transform: rotate(0);
     }
     100%{  
-    transform: rotate(.03846153846153846153846153846154turn);
+    transform: rotate(var(--turn));
     }
   }
