@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: url(img/BG.png);
+    background-position: center;
+    background-size: 100% 100%;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color:#744e29;
+  }
+
+  .img-cueva {
+    position:absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 5;
+  }
+
+  .img-circulocentral {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    margin: auto;
+    z-index: 3;
+  }
+
+  .img-circulomedio{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    margin: auto;
+    z-index: 2;
+  }
+
+
+  #img-circuloexterno {
+    position:absolute;
+    left: 29.7%;
+    top: 22.7%;
+    width: 40%;
+    margin: auto;
+    z-index: 1;
+  }
+
+  #instrucciones{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    word-wrap: break-word;
+    margin: auto;
+    z-index: 4;
+  }
+
+  #flechitas {
+    color: #996633;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  @keyframes idle { 100% {} }
+
+  @keyframes girarcipher {
+    0% {  
+    transform: rotate(0turn);
+    }
+    100%{  
+    transform: rotate(.03846153846153846153846153846154turn);
+    }
+  }
