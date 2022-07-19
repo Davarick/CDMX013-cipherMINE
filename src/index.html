@@ -11,26 +11,16 @@
 
 <body>
     <script type="text/javascript" src="app.js"></script>
-    <script>
-        function thecifer()
-{
-  window.location.href = "message.html";
-}
-
-function thedecifer()
-{
-    window.location.href = "message.html";
-}
-    </script>
     <!--   this is a comment -->
-    <section id="opciones" >
+    <section id="beginning">
+    <div id="opciones" >
         <img class="img-opcionl" src="img/OpcionIzquierda.png">
         <img class="img-opcionr" src="img/OpcionDerecha.png">
         <form>
-            <input id="cifrar" type="button" value="Esconder un mensaje" onclick="thecifer()" >
-            <input id="decifrar" type="button" value="Revelar un código" onclick="thedecifer()" >
+            <input id="cifrar" type="button" value="Esconder un mensaje" onclick="showtextinput(true)" >
+            <input id="decifrar" type="button" value="Revelar un código" onclick="showtextinput(false)" >
         </form>
-    </section>
+      </div>
     <img class="img-cueva" src="img/Cueva.png" >
     <img class = "img-tortuga" src="img/Tortuga1.png" alt="Img del explorador Tort Uga">  
     <img class="img-dialogo" src="img/Dialogo.png">
@@ -40,9 +30,58 @@ function thedecifer()
         </p>  
         <form>
             <input class="textinput" type="text" id="name" name="fname" >
-            <input class="thebutton" type="button" value="Continuar" onclick="saludo()">
+            <input class="thebutton" type="button" value="Continuar" onclick="greetings()">
         </form>  
     </div>
+  </section>
+
+    <section id="ciphermessage">
+      <div id="title">
+        <h1 >Puedes usar este pergamino para escribir</h1>
+        <p>(no uses símbolos especiales (Ñ#$.), que aún no sé cómo codificarlos)</p>  
+      </div>
+      <img class="img-message"  src="img/Mensaje.png">
+      <textarea name="message" id="themessage" placeholder="Escribe aquí..."></textarea>
+      <input id="buttoncipher"  type="button" value="Continuar" onclick="showcipherimage(true)" >
+      <input id="buttondecipher"  type="button" value="Continuar" onclick="showcipherimage(false)" >
+
+    </section>
+
+    <section id="cipherimage">
+      <img class="img-cueva" src="img/Cueva.png" >   
+      <div class="div-circuloexterno">
+          <img id="img-circuloexterno" src="img/CirculoExterno.png">
+      </div>
+      <img class="img-circulocentral" src="img/CirculoCentral.png">
+      <img class="img-circulomedio" src="img/CirculoMedio.png">
+     
+      <div id="instructions">
+      <p id="whattodo"> Escribe un número para esconder tu mensaje
+      </p>
+          <input id="offset" type="text" style="width: 25px" restrictions maxlength="3">
+          <br>
+          <input type="button" value="cifrar" id="botoncitofiufiu" onclick="insertoffset(true)">
+          <input type="button" value="decifrar" id="botoncitofuafua" onclick="insertoffset(false)">
+          <br>
+          <p id="flechitas">(también puedes usar las flechitas)</p>
+      </div>
+      <img id='img-return' class="regresarinicio" src="img/RegresarInicioB.png">
+      <input id="btn-ciphermessage" class="botonregresar" type="button" value="Continuar" onclick="codethememo(true)">  
+      <input id="btn-deciphermessage" class="botonregresar" type="button" value="Continuar" onclick="codethememo(false)">  
+    </section>
+
+    <section id="results">
+      <div id="title">
+        <br>
+        <h1 >Aqui está tu resultado</h1>
+      </div>
+      <img class="img-message"  src="img/Mensaje.png">
+      <div id="div-results">
+        <p id="resultingmessage" ></p>
+      </div>
+        <img src="img/RegresarInicioB.png" class='regresarinicio'>
+        <input type="button" value="Regresar" onclick="window.location.reload()" class="botonregresar">
+    </section>
    
 </body>
 </html>
