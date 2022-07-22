@@ -10,15 +10,14 @@
 </head>
 
 <body>
-    <script type="text/javascript" src="app.js"></script>
     <!--   this is a comment -->
     <section id="beginning">
     <div id="opciones" >
         <img class="img-opcionl" src="img/OpcionIzquierda.png">
         <img class="img-opcionr" src="img/OpcionDerecha.png">
         <form>
-            <input id="cifrar" type="button" value="Esconder un mensaje" onclick="showtextinput(true)" >
-            <input id="decifrar" type="button" value="Revelar un código" onclick="showtextinput(false)" >
+            <input id="cifrar" type="button" value="Esconder un mensaje" >
+            <input id="decifrar" type="button" value="Revelar un código" >
         </form>
       </div>
     <img class="img-cueva" src="img/Cueva.png" >
@@ -30,7 +29,7 @@
         </p>  
         <form>
             <input class="textinput" type="text" id="name" name="fname" >
-            <input class="thebutton" type="button" value="Continuar" onclick="greetings()">
+            <input id="thebutton" type="button" value="Continuar">
         </form>  
     </div>
   </section>
@@ -42,8 +41,8 @@
       </div>
       <img class="img-message"  src="img/Mensaje.png">
       <textarea name="message" id="themessage" placeholder="Escribe aquí..."></textarea>
-      <input id="buttoncipher"  type="button" value="Continuar" onclick="showcipherimage(true)" >
-      <input id="buttondecipher"  type="button" value="Continuar" onclick="showcipherimage(false)" >
+      <input id="buttoncipher"  type="button" value="Continuar" >
+      <input id="buttondecipher"  type="button" value="Siguiente">
 
     </section>
 
@@ -60,14 +59,14 @@
       </p>
           <input id="offset" type="text" style="width: 25px" restrictions maxlength="3">
           <br>
-          <input type="button" value="cifrar" id="botoncitofiufiu" onclick="insertoffset(true)">
-          <input type="button" value="decifrar" id="botoncitofuafua" onclick="insertoffset(false)">
+          <input type="button" value="cifrar" id="botoncitofiufiu" >
+          <input type="button" value="descifrar" id="botoncitofuafua" >
           <br>
           <p id="flechitas">(también puedes usar las flechitas)</p>
       </div>
       <img id='img-return' class="regresarinicio" src="img/RegresarInicioB.png">
-      <input id="btn-ciphermessage" class="botonregresar" type="button" value="Continuar" onclick="codethememo(true)">  
-      <input id="btn-deciphermessage" class="botonregresar" type="button" value="Continuar" onclick="codethememo(false)">  
+      <input id="btn-ciphermessage" class="botonregresar" type="button" value="Continuar" >  
+      <input id="btn-deciphermessage" class="botonregresar" type="button" value="Siguiente" >  
     </section>
 
     <section id="results">
@@ -82,6 +81,6 @@
         <img src="img/RegresarInicioB.png" class='regresarinicio'>
         <input type="button" value="Regresar" onclick="window.location.reload()" class="botonregresar">
     </section>
-   
+    <script type="module" src="index.js"></script>   
 </body>
 </html>

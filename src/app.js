@@ -1,7 +1,3 @@
-
-
-
-
 function greetings (){
     let Name = document.getElementById("name").value;
     document.getElementById("dialogtext").innerHTML = "Hola " + Name + ". ¿Qué te gustaría hacer hoy?"
@@ -26,6 +22,7 @@ function showtextinput (isCipher)
   const theCiphermessage = document.getElementById("ciphermessage");
   theCiphermessage.style.display = 'block'
 }
+
 let theTextMessage;
 function showcipherimage (isCipher){
   theTextMessage = document.getElementById("themessage").value;

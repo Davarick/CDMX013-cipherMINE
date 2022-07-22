@@ -165,7 +165,6 @@ textarea{
   font-family: 'Press Start 2P', cursive;
   font-weight: 500;
   font-size: 16px;
-  text-transform:uppercase;
 }
 
 textarea:hover{
@@ -294,7 +293,6 @@ border-color: #99663300;
 width: 20%;
 height: 10%;
 white-space: pre-wrap;
-display; none;
 }
 
 .botonregresar:hover {
