@@ -26,8 +26,8 @@ const botonDecifrar = document.getElementById('decifrar');
 botonDecifrar.addEventListener('click',  function (){
   theBeginning.style.display = "none"
   theCiphermessage.style.display = 'block'
-  document.getElementById("title").innerHTML = "Puedes usar este pergamino para pegar tu código";
-  document.getElementById("title").style.color = '#00cc66';
+  document.getElementById("theTitle").innerHTML = "Puedes usar este pergamino para pegar tu código";
+  document.getElementById("theTitle").style.color = '#00cc66';
   theButtondecipher.style.display = 'block'
 })
 
@@ -66,7 +66,7 @@ else { alert("Aún no has pegado tu código") }
 }
 
 let theOffset;
-let circuloExterno = document.getElementById('img-circuloexterno');;
+let circuloExterno = document.getElementById('img-circuloexterno');
 const root = document.documentElement;
 
 btnCifrar.addEventListener('click', insertoffsetc )
@@ -76,6 +76,7 @@ btnDecifrar.addEventListener('click', insertoffsetd)
 function insertoffsetc () {
     circuloExterno = document.getElementById('img-circuloexterno');
     theOffset = document.getElementById("offset").value
+    theOffset = parseInt(theOffset)
     root.style.setProperty('--turn', (theOffset * (1/26)) + "turn");
     //No entiendo
     circuloExterno.style.animation = 'none';
@@ -113,14 +114,12 @@ const theResult = document.getElementById("results");
 //Botones que imprimen al final el resultado
 btnCipherMessage.addEventListener('click', function(){
 document.getElementById('resultingmessage').innerHTML = cipher.encode(theOffset, theTextMessage);
-console.log(cipher.encode(theOffset, theTextMessage));
 theCipherimage.style.display = 'none';
 theResult.style.display = 'block';
 });
 
 btnDecipherMessage.addEventListener('click', function(){
 document.getElementById('resultingmessage').innerHTML = cipher.decode(theOffset, theTextMessage);
-console.log(cipher.decode(theOffset, theTextMessage));
 theCipherimage.style.display = 'none';
 theResult.style.display = 'block';
 });
