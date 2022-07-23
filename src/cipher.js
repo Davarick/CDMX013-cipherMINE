@@ -26,7 +26,7 @@ const cipher = {
   },
   decode: function (offset, string) {
     if(typeof offset == "number" && typeof string == "string") {
-    offset = 26 + (offset%26);
+    offset = 26 + ((offset * -1)%26);
     console.log(offset);
     for (let i = 0; i < string.length; i++) {    
       if(string.charCodeAt(i) >= 'A'.charCodeAt(0) && string.charCodeAt(i) <= 'Z'.charCodeAt(0))

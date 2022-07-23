@@ -69,7 +69,7 @@ let theOffset;
 let circuloExterno = document.getElementById('img-circuloexterno');
 const root = document.documentElement;
 
-btnCifrar.addEventListener('click', insertoffsetc )
+btnCifrar.addEventListener('click', insertoffsetc)
 btnDecifrar.addEventListener('click', insertoffsetd)
 
 //Funciones que determinan cuando y hacia donde va a girar la rueda
@@ -105,6 +105,7 @@ function insertoffsetd () {
     document.getElementById('img-return').style.display = 'block';
     document.getElementById('btn-deciphermessage').style.display = 'block';
   }, 2000); 
+  theOffset = theOffset * -1;
 }
 
 const btnCipherMessage = document.getElementById('btn-ciphermessage');
